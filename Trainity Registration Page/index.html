@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Register Now</title>
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="logo">
+            <p class="logo-text">trainity</p>
+        </div>
+    </div>
+
+    <div class="register-page-wrapper">
+        <h1>Register For Free</h1>
+        <p class="register-body-copy">For joining our free webinar complete these 3 steps to get a chance to enroll in 
+            <span>Trainity Data Analytics Internship Training Program.</span></p>
+    </div>
+
+    <div class="tri-card-section">
+        <div class="register" id="register">
+            <div class="card-wrapper-horizontal">
+                    <img src="img/Icon.png" alt="register-ico" class="instruction-icons">
+                    <div class="card-wrapper-vert">
+                        <h3>Register</h3>
+                        <p>Get yourself registered for joining our webinar</p>
+                    </div>
+            </div>
+        </div>
+        <hr id="hr1">
+        <div class="register" id="live">
+            <div class="card-wrapper-horizontal">
+                <img src="img/Cam-Icon.png" alt="cam-ico" class="instruction-icons">
+                <div class="card-wrapper-vert">
+                    <h3>Attend LIVE</h3>
+                    <p>Join our LIVE webinar and get to know everything</p>
+                </div>
+            </div>
+        </div>
+        <hr id="hr2">
+        <div class="register" id="enroll">
+            <div class="card-wrapper-horizontal">
+                <img src="img/Rocket-Icon.png" alt="rocket-ico" class="instruction-icons">
+                <div class="card-wrapper-vert">
+                    <h3>Enroll in Program</h3>
+                    <p>Get yourself enrolled in our program</p>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+    <div class="countdown-section">
+        <div class="digital-clock-section">
+            <div id="clockdiv">
+                <div class="digital-clock-vertical">          
+                    <span class="days"></span>
+                    <div class="smalltext">Days</div>
+
+                </div>
+
+                <div class="digital-clock-vertical">
+                    <div class="digital-clock-days">
+                    <span class="hours"></span> 
+                    <div class="smalltext">Hours</div>
+                </div>
+                </div>
+                <div class="colon-icons">:</div>
+                
+                <div class="digital-clock-vertical">
+                    <span class="minutes"></span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div class="colon-icons">:</div>
+
+                <div class="digital-clock-vertical">
+                    <span class="seconds"></span>
+                    <div class="smalltext">Seconds</div>
+                </div>
+            </div>
+        </div>
+        <div onclick="openPopup()" class="register-btn-wrapper">
+            <div class="register-btn">
+                <h1>REGISTER</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Form -->
+    <div class="container" id="popup">
+        <div class="forms">
+            <div class="form login">
+                <div class="close-btn">
+                    <img src="img/close.png" class="close-ico" onclick="closePopup()"></img>
+                </div>
+                <h1 class="title">Traininty Launch Webinar - Batch 56</h1>
+                <p class="form-body-copy">Fill the required details for joining 
+                    <span class="form-body-copy-bold">Trainity Launch Webinar.</span></p>
+                <form action="#">
+                    <div class="input-field">
+                        <div class="form-placeholder">
+                            <p class="form-placeholder">Timezone</p>
+                            <button onclick="myFunction()" class="dropbtn" id="timezone-ind">India Standard Time (IST), UTC +5:30 <img class="three-dots-icon" src="img/DotsThreeOutline.png"></img></button>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#">India Standard Time (IST), UTC +5:30</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="input-field">
+                        <p class="form-placeholder">Name</p>
+                        <input type="text" class="icon-user" placeholder="" required>
+                        
+                        
+                    </div>
+                    <div class="input-field">
+                        <p class="form-placeholder">Email Address</p>
+                        <input type="email" class="icon-rtl" placeholder="" required>
+                        
+                    </div>
+                    <div class="input-field">
+                        <div class="form-placeholder">
+                            <p class="form-placeholder">Select Your Group</p>
+                            <button onclick="myFunction1()" class="dropbtn">Select the group <img class="three-dots-icon" src="img/CaretDown.png"></img></button>
+                            <div id="myDropdown1" class="dropdown-content">
+                              <a href="#">College Student</a>
+                              <a href="#">Recent Graduate</a>
+                              <a href="#">Working Professional</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/index.js"></script>
+    
+</body>
+</html>
